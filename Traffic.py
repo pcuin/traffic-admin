@@ -1,6 +1,6 @@
 # traffic
 
-class TrafficRank:
+class Traffic:
 
     def __init__(self, radius, risk, HOV, speed):
         tiers = {"Low": 1, "Moderate": 2, "High": 3}
@@ -30,7 +30,7 @@ in the {self.speed} lane."
         return self.risk
 
 
-d = TrafficRank(1.99, "Low", 0, 1)
+d = Traffic(1.99, "Low", 0, 1)
 print(d.get_liability()) 
 
 
